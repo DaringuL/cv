@@ -1,10 +1,6 @@
-document.getElementById("downOne").addEventListener("click", function (e){
-    let down = window.innerHeight;
-    window.scroll({
-        top: down,
-        left: 0,
-        behavior: 'smooth'
-    });
+
+document.getElementById("downOne").addEventListener("click", function (){
+    document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})
 })
 
 document.getElementById("footer-mail").addEventListener("click", ()=>window.location.href = "mailto:love.dzh.r@gmail.com");
